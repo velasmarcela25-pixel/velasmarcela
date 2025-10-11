@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velas Marcela | Próximamente Navidad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --color-bg: #F5F1EB;
+      --color-primary: #D6C3B4;
+      --color-dark: #2D2424;
+      --color-accent: #B38B59;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: var(--color-bg);
+      color: var(--color-dark);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: var(--color-dark);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--color-accent);
+    }
+
+    .btn-accent {
+      background-color: var(--color-accent);
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .btn-accent:hover {
+      background-color: #9a7549;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--color-dark);
+      color: #f5f1eb;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 1.3s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- 🕯️ ENCABEZADO -->
+  <header class="relative">
+    <nav class="flex justify-between items-center px-8 py-4">
+      <div class="flex space-x-6 text-lg">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+      </div>
+
+      <!-- Logo centrado -->
+      <div class="flex justify-center">
+        <img src="img/logo.png" alt="Logo Velas Marcela" class="w-24 h-auto">
+      </div>
+
+      <div class="flex space-x-6 text-lg">
+        
+    <a href="index.html#contacto">Contacto</a>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- 🎄 ANUNCIO NAVIDEÑO (MISMO ESTILO INDEX, CENTRADO) -->
+  <main class="flex-grow flex items-center justify-center fade-in">
+    <section class="text-center p-10 max-w-3xl bg-white/70 backdrop-blur-sm border border-[var(--color-primary)] rounded-3xl shadow-xl">
+      <h1 class="text-5xl font-serif text-[var(--color-accent)] mb-4">🎄 Próximamente</h1>
+      <p class="text-lg text-[var(--color-dark)] leading-relaxed mb-6">
+        Muy pronto llega nuestra <span class="font-semibold text-[var(--color-accent)]">Colección de Navidad</span> 🎁  
+        Fragancias cálidas, detalles únicos y el encanto artesanal de <strong>Velas Marcela</strong>. ✨
+      </p>
+      <p class="text-sm text-gray-600 italic">Vuelve pronto para descubrir nuestras nuevas creaciones navideñas.</p>
+    </section>
+  </main>
+
+  <!-- 📞 PIE DE PÁGINA -->
+  <footer class="py-8 text-center">
+    <img src="img/logo.png" alt="Logo Velas Marcela" class="w-16 mx-auto mb-3">
+    <p class="text-sm"> 2025 Velas Marcela - Todos los derechos reservados</p>
+    <p>
+        📸 Instagram:
+        <a href="https://www.instagram.com/velas_marcela/" 
+           target="_blank" 
+           class="text-[var(--color-primary)] hover:underline">
+          @velas_marcela
+        </a>
+      </p>
+
+  </footer>
+</body>
+</html>

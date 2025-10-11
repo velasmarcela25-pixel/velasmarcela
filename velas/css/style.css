@@ -1,0 +1,88 @@
+
+        :root {
+            --color-primary: #947b6a; 
+            --color-secondary: #f4eee8; /* Fondo claro/beige */
+            --color-dark: #38302f; /* Botones/Elementos oscuros */
+            --color-light: #ffffff; /* Texto claro */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-secondary);
+            color: var(--color-dark);
+            scroll-behavior: smooth;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif; /* Para títulos y nombres de productos */
+        }
+
+        /* Estilo para el Navbar con el degradado angular */
+        .navbar-bg {
+            /* Simulando el efecto de fondo angular con un degradado */
+            background: linear-gradient(135deg, rgba(150, 150, 150, 0.7) 0%, rgba(150, 150, 150, 0) 30%, var(--color-dark) 85%);
+            height: 350px; /* Altura para el banner */
+            position: relative;
+        }
+        
+        /* Contenedor principal de la página */
+        .page-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Botón de Agregar al Carrito */
+        .btn-cart {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            transition: background-color 0.3s;
+        }
+
+        .btn-cart:hover {
+            background-color: var(--color-primary);
+        }
+
+        /* Campos de cantidad de producto */
+        .qty-input {
+            border: 1px solid var(--color-primary);
+            background-color: #fcfcfc;
+            color: var(--color-dark);
+        }
+
+        /* Estilo de la fuente para el logo */
+        .logo {
+            color: var(--color-light);
+            font-size: 2.5rem; /* Talla grande */
+            letter-spacing: 0.15em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin-left: 20px;
+        }
+
+        /* Estilo para los círculos de producto */
+        .product-circle {
+            background-color: #e4dcd3; /* Un tono ligeramente más oscuro que el fondo */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Para el texto sutil en el banner principal */
+        .banner-text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Contenedor del carrito de notificaciones */
+        #cart-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            transform: translateX(120%);
+            opacity: 0;
+        }
+
+        #cart-notification.visible {
+            transform: translateX(0);
+            opacity: 1;
+        }
