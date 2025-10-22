@@ -32,9 +32,23 @@ margin: 0 auto;}
       display: none; align-items: center; justify-content: center; z-index: 80;
     }
     .modal.active { display: flex; }
+
+    
+    .banner-domicilio {
+      background: #B38B59;
+      color: white;
+      text-align: center;
+      padding: 0.6rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
+  <!-- ✅ BANNER DE DOMICILIO -->
+  <div class="banner-domicilio">
+    🚚 Envíos a toda Colombia 
+  </div>
 
   <!-- 🔸 ENCABEZADO -->
   <header>
@@ -158,6 +172,15 @@ margin: 0 auto;}
         <h5 class="text-xl font-serif mb-3">Contacto</h5>
         <!-- <p>📧 velasmarcela@gmail.com</p> -->
         <p>📱 +57 3234480931</p>
+        <p>
+        📸 Instagram:
+        <a href="https://www.instagram.com/velas_marcela/" 
+           target="_blank" 
+           class="text-[var(--color-primary)] hover:underline">
+          @velas_marcela
+        </a>
+      </p>
+
       </div>
     </div>
   </footer>
@@ -202,6 +225,12 @@ margin: 0 auto;}
   <div id="infoModal" class="modal">
     <div class="bg-white p-8 rounded-xl w-96">
       <h2 class="text-2xl font-serif mb-4 text-center">Datos del Cliente</h2>
+      <!-- ✅ agregado aviso de domicilio -->
+      <p class="text-center text-sm mb-4 text-gray-600 bg-yellow-100 p-2 rounded">
+        🚚 Recuerda: el costo del domicilio se paga aparte.  
+        
+      </p>   
+      
       <form id="infoForm" class="space-y-3">
         <div>
           <label class="block text-sm">Nombre:</label>
